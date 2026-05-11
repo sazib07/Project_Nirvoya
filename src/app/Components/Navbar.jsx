@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="w-full border-b bg-white text-gray-700">
   
       {/* Main Navbar */}
-      <div className="mx-auto flex max-w-full items-center justify-between gap-6 px-4 py-5">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-5">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div>

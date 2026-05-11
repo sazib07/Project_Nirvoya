@@ -35,7 +35,7 @@ const categories = [
 ];
 const Category = () => {
   return (
-<div className="bg-[#f5f5f5] py-10 px-6">
+<div className=" items-center max-w-full py-10 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold text-gray-800 mb-8">
           Category
