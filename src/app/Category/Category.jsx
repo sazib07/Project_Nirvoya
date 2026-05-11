@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import {
   HeartPulse,
@@ -26,6 +28,7 @@ const categories = [
   { name: "Tools & Hardware", icon: Hammer },
   { name: "Leather Goods", icon: ShoppingBasket },
   { name: "Jewelleries", icon: Gem },
+ { name: "Men's Fashion", icon: Shirt },
   { name: "Watches", icon: Watch },
   { name: "Pet Supplies", icon: Dog },
   { name: "Seasonal", icon: CalendarDays },
@@ -38,14 +41,14 @@ const Category = () => {
           Category
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-5 gap-4">
           {categories.map((item, index) => {
             const Icon = item.icon;
 
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg px-5 py-4 flex items-center justify-between hover:shadow-md transition cursor-pointer"
+                className="w-[235px] bg-white border border-gray-200 rounded-lg px-5 py-4 flex items-center justify-between hover:shadow-md transition cursor-pointer"
               >
                 <div className="flex items-center gap-3">
                   <Icon size={22} className="text-sky-500" />
