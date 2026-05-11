@@ -1,21 +1,22 @@
 
 "use client";
+import  CiUser from "react-icons/ci";
+
 
 export default function Navbar() {
   return (
     <header className="w-full border-b bg-white text-gray-700">
       {/* Top Bar */}
-      <div className="border-b bg-gray-50 text-sm">
+      {/* <div className="border-b bg-gray-50 text-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
    
-
           <div className="flex items-center gap-4">
             <button className="hover:text-blue-500">Track Order</button>
             <button className="hover:text-blue-500">Wishlist</button>
             <button className="hover:text-blue-500">Login</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navbar */}
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-5">
@@ -34,13 +35,6 @@ export default function Navbar() {
         {/* Search */}
         <div className="hidden flex-1 items-center md:flex">
           <div className="flex w-full overflow-hidden rounded-lg border">
-            <select className="border-r bg-gray-50 px-4 text-sm outline-none">
-              <option>All Categories</option>
-              <option>Men</option>
-              <option>Women</option>
-              <option>Accessories</option>
-            </select>
-
             <input
               type="text"
               placeholder="Search products..."
@@ -55,18 +49,17 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-4">
-          <button className="relative rounded-full border p-3 hover:bg-gray-100">
-            ❤
-            <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-blue-500 text-xs text-white">
-              2
-            </span>
+          <button className="relative p-3 hover:bg-gray-100">
+            ❤Wishlist
           </button>
 
-          <button className="relative rounded-full border p-3 hover:bg-gray-100">
-            🛒
-            <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-blue-500 text-xs text-white">
-              3
-            </span>
+          <button className="relative  p-3 hover:bg-gray-100">
+            🛒mycart
+          
+          </button>
+
+          <button className="relative  p-3 hover:bg-gray-100">
+            <CiUser />login
           </button>
         </div>
       </div>
