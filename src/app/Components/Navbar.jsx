@@ -1,7 +1,5 @@
 
 "use client";
-import  CiUser from "react-icons/ci";
-
 
 export default function Navbar() {
   return (
@@ -49,23 +47,40 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-4">
+        <button className="relative flex items-center gap-2 p-3 hover:bg-gray-100 rounded-lg">
+  
+  {/* User Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.8}
+    stroke="currentColor"
+    className="w-5 h-5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M15.75 6.75a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a7.5 7.5 0 0 1 15 0"
+    />
+  </svg>
+
+  <h1>Login</h1>
+</button>
           <button className="relative p-3 hover:bg-gray-100">
             ❤Wishlist
           </button>
 
           <button className="relative  p-3 hover:bg-gray-100">
             🛒mycart
-          
           </button>
 
-          <button className="relative  p-3 hover:bg-gray-100">
-            <CiUser />login
-          </button>
+          
         </div>
       </div>
 
       {/* Bottom Menu */}
-      <nav className="border-t bg-white">
+      <nav className=" bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
           <ul className="flex items-center gap-8 py-4 text-sm font-medium">
             <li className="cursor-pointer text-blue-500">Home</li>
