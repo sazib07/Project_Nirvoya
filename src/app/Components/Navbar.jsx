@@ -4,29 +4,13 @@
 export default function Navbar() {
   return (
     <header className="w-full border-b bg-white text-gray-700">
-      {/* Top Bar */}
-      {/* <div className="border-b bg-gray-50 text-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-   
-          <div className="flex items-center gap-4">
-            <button className="hover:text-blue-500">Track Order</button>
-            <button className="hover:text-blue-500">Wishlist</button>
-            <button className="hover:text-blue-500">Login</button>
-          </div>
-        </div>
-      </div> */}
-
+  
       {/* Main Navbar */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-5">
+      <div className="mx-auto flex max-w-full items-center justify-between gap-6 px-4 py-5">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-xl font-bold text-white">
-            N
-          </div>
-
           <div>
-            <h1 className="text-2xl font-bold text-gray-800">Nirvoya</h1>
-            <p className="text-xs text-gray-500">Fashion Ecommerce</p>
+            <img src="final png 1.png" alt="" />
           </div>
         </div>
 
@@ -77,27 +61,27 @@ export default function Navbar() {
 
           
         </div>
+
       </div>
 
-      {/* Bottom Menu */}
+        {/* Bottom Menu */}
+        
       <nav className=" bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
-          <ul className="flex items-center gap-8 py-4 text-sm font-medium">
-            <li className="cursor-pointer text-blue-500">Home</li>
-            <li className="cursor-pointer hover:text-blue-500">Shop</li>
-            <li className="cursor-pointer hover:text-blue-500">Categories</li>
-            <li className="cursor-pointer hover:text-blue-500">Products</li>
-            <li className="cursor-pointer hover:text-blue-500">Pages</li>
-            <li className="cursor-pointer hover:text-blue-500">Blog</li>
-            <li className="cursor-pointer hover:text-blue-500">Contact</li>
+        <div className="mx-auto max-w-7xl items-center justify-between px-4">
+          <ul className="flex items-center pl-4.25 gap-10 py-4 font-poppins uppercase text-4 font-medium">
+            <li className="cursor-pointer text-blue-500">Women's Fashion</li>
+            <li className="cursor-pointer hover:text-blue-500">Men's Fashion</li>
+            <li className="cursor-pointer hover:text-blue-500">Kid's Fashion</li>
+            <li className="cursor-pointer hover:text-blue-500">Home & Lifestyle</li>
+            <li className="cursor-pointer hover:text-blue-500">Arts & Crafts</li>
+            <li className="cursor-pointer hover:text-blue-500">Computer & Electronics</li>
+            <li className="cursor-pointer hover:text-blue-500">Food & Grocery</li>
           </ul>
-
-          <div className="hidden items-center gap-2 text-sm lg:flex">
-            <span className="font-semibold text-blue-500">🔥</span>
-            <p>Special Offer: Free Shipping Over $100</p>
-          </div>
         </div>
       </nav>
+
+     
+      
     </header>
   );
 }
