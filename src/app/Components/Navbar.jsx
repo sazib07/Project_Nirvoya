@@ -69,7 +69,7 @@ export default function Navbar() {
       <nav className=" bg-white">
         <div className="mx-auto max-w-7xl items-center justify-between px-4">
           <ul className="flex items-center pl-4.25 gap-10 py-4 font-poppins uppercase text-4 font-medium">
-            <li className="cursor-pointer text-blue-500">Women's Fashion</li>
+            <li className="cursor-pointer hover:text-blue-500">Women's Fashion</li>
             <li className="cursor-pointer hover:text-blue-500">Men's Fashion</li>
             <li className="cursor-pointer hover:text-blue-500">Kid's Fashion</li>
             <li className="cursor-pointer hover:text-blue-500">Home & Lifestyle</li>
